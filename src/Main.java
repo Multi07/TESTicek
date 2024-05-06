@@ -80,14 +80,17 @@ public class Main {
                                 System.out.println("počet Zaměstnanců na této pozice: " + amountT);
                             }
                             case "4" -> {
+                                int platC;
                                 for (Pozice human : humans) {
                                     if (human.getPozice().equalsIgnoreCase("asistent")) {
                                         amountT++;
-                                        human.MzdaZaXMonth();
+                                        platC = human.getPlat()+human.getPlat();
+                                        human.MzdaZaXMonth(platC);
                                     }
                                 }
                             }
                             case "5" -> {
+                                int platC;
                                 for (Pozice human : humans) {
                                     if (human.getPozice().equalsIgnoreCase("uklizecka")) {
                                         amountT++;
