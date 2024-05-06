@@ -14,11 +14,11 @@ public abstract class Pozice {
     /**
      * Mzda za určitý počet měsíců pro všechny zaměstnance
      */
-    public void MzdaZaXMonth() {
+    public void MzdaZaXMonth(int platC) {
         System.out.println("Zadejte počet měsíců");
         int months = sc.nextInt();
         System.out.println("Za "+months+" měsíců budete muset zaplatit :");
-        System.out.println(plat*months);
+        System.out.println(platC*months);
         System.out.println("pro všechny zaměstnance na této pozici");
     }
 
@@ -30,5 +30,9 @@ public abstract class Pozice {
 
     public String getPozice() {
         return pozice;
+    }
+
+    public int getPlat() {
+        return plat;
     }
 }

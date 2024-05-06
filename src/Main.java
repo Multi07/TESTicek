@@ -83,7 +83,7 @@ public class Main {
                                 for (Pozice human : humans) {
                                     if (human.getPozice().equalsIgnoreCase("asistent")) {
                                         amountT++;
-                                        human.VypisInfo();
+                                        human.MzdaZaXMonth();
                                     }
                                 }
                             }
@@ -91,15 +91,17 @@ public class Main {
                                 for (Pozice human : humans) {
                                     if (human.getPozice().equalsIgnoreCase("uklizecka")) {
                                         amountT++;
-                                        human.VypisInfo();
+                                        platC = human.getPlat()+human.getPlat();
+                                        human.MzdaZaXMonth(platC);
                                     }
                                 }
                             }
                             case "6" -> {
+                                int platC;
                                 for (Pozice human : humans) {
                                     if (human.getPozice().equalsIgnoreCase("technik")) {
                                         amountT++;
-                                        human.VypisInfo();
+                                        platC = human.getPlat()+human.getPlat();
                                     }
                                 }
                             }
