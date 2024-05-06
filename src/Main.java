@@ -105,6 +105,7 @@ public class Main {
                                     if (human.getPozice().equalsIgnoreCase("technik")) {
                                         amountT++;
                                         platC = human.getPlat()+human.getPlat();
+                                        human.MzdaZaXMonth(platC);
                                     }
                                 }
                             }
